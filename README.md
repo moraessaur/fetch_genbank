@@ -68,7 +68,7 @@ taxa <- c("Cnidaria","Ctenophora",
 map(taxa,fetch_genbank,k="nucleotide",gene="COI[ALL] OR CO1 [ALL] OR COXI [ALL] OR COX1 [ALL]", dir="suapasta")
 ```
 
-Lembrando que voce tem que colocar o caminho para a paste que vc quer que salve as coisas no argumento `dir` e como eh muita info, deve demorar um pouco para executar!
+Lembrando que voce tem que colocar o caminho para a pasta que vc quer que salve as coisas no argumento `dir` e como eh muita info, deve demorar um pouco para executar!
 
 Eu usei a funcao com o comando abaixo, mais enxuto por causa da minha internet 💩 e funcionou:
 
