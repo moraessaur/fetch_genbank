@@ -43,7 +43,7 @@ Quando usei apenas Annelida e Cnidaria funcionou.
 Veja se o comando abaixo funciona no seu R, depois de, naturalmente, ja ter chamado a funcao:
 
 ```python
-# se nao tiver esse pacote instalado, instalado
+# se nao tiver esse pacote instalado, instala
 library(tidyverse)
 
 # agora vou criar o vetor que preciso dos taxa, formatado, com base no que voce me mandou no email:
