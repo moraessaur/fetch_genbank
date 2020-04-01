@@ -4,7 +4,7 @@ Funcao escrita para meu amigo profeta. Escrevi com bastante pressa, talkey? 🏇
 
 Essa eh a funcao:
 
-```r
+```python
 library(rentrez)
 fetch_genbank <- function(k="nucleotide",
                           gene="COI[GENE] OR CO1[GENE]",
@@ -42,7 +42,7 @@ Quando usei apenas Annelida e Cnidaria funcionou.
 
 Veja se o comando abaixo funciona no seu R, depois de, naturalmente, ja ter chamado a funcao:
 
-```
+```python
 # se nao tiver esse pacote instalado, instalado
 library(tidyverse)
 
