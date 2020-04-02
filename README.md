@@ -73,8 +73,8 @@ Lembrando que voce tem que colocar o caminho para a pasta que vc quer que salve 
 Eu usei a funcao com o comando abaixo, mais enxuto por causa da minha internet 💩 e funcionou:
 
 ```python
-taxa <- c("Anellida[ORG]","Cnidaria[ORG]")
-map(taxa,fetch_genbank,k="nucleotide",gene="COI[GENE] OR CO1[GENE]",dir="data/")
+taxa <- c("Anellida[ORG]","Ctenophora[ORG]")
+map(taxa,fetch_genbank,k="nucleotide",gene="COI[ALL] OR CO1 [ALL] OR COXI [ALL] OR COX1 [ALL]",dir="data/")
 ```
 
 Qualquer coisa avise!
