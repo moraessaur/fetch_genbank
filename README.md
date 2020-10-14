@@ -1,8 +1,8 @@
 # Function fetch_genbank()
 
-Funcao escrita para meu amigo profeta. Escrevi com bastante pressa, talkey? 🏇
+Funcao escrita para meu amigo profeta. Escrevi com bastante pressa, beleza?
 
-Essa eh a funcao:
+Essa é a função:
 
 ```python
 library(rentrez)
@@ -31,16 +31,16 @@ fetch_genbank <- function(k="nucleotide",
 
 Tem quatro argumentos:
 
-* `k`: Eh basicamente a base de dados que vc quer buscar, escrevi pensando em <i>"nucleotide"</i> como default.
+* `k`: É basicamente a base de dados que vc quer buscar, escrevi pensando em <i>"nucleotide"</i> como default.
 * `gene`: meio auto explicativo.
 * `taxa`: taxa a ser buscado, tem que ser no formato taxa[ORG] (ou outra coisa desde que seja taxa[alguma coisa], com os colchetes colados.)
-* `dir`: diretorio onde o resultado vai ser salvo.
+* `dir`: diretério onde o output vai ser salvo.
 
-O resultado final da funcao ja sao as sequencias salvas como <i>.fasta</i>, onde o nome do arquivo eh o nome do taxa, no diretorio definido por `dir`.
+O resultado final da função já são as sequências salvas como <i>.fasta</i>, onde o nome do arquivo é o nome do taxa, no diretério definido por `dir`.
 
 Quando usei apenas Annelida e Cnidaria funcionou.
 
-Veja se o comando abaixo funciona no seu R, depois de, naturalmente, ja ter chamado a funcao:
+Veja se o comando abaixo funciona no seu R depois de ja ter chamado a funcao:
 
 ```python
 # se nao tiver esse pacote instalado, instala
@@ -63,14 +63,14 @@ taxa <- c("Cnidaria","Ctenophora",
           "Platyhelminthes","Chordata",
           "Echinodermata","Hemichordata") %>% paste("[ORG]",sep="") #incluir o termo org nos taxa
 
-# rodando o comando abaixo, deveria funcionar. Eu uso map do pacote "purrr" que ja ta dentro do tidyverse, soh porque estou acostumado:
+# rodando o comando abaixo, deveria funcionar. Eu uso map do pacote "purrr" que ja ta dentro do tidyverse, só porque estou acostumado:
 
 map(taxa,fetch_genbank,k="nucleotide",gene="COI[ALL] OR CO1 [ALL] OR COXI [ALL] OR COX1 [ALL]", dir="suapasta")
 ```
 
-Lembrando que voce tem que colocar o caminho para a pasta que vc quer que salve as coisas no argumento `dir` e como eh muita info, deve demorar um pouco para executar!
+Lembrando que você tem que colocar o caminho para a pasta onde você quer que salve o output no argumento `dir` e como é muita info, deve demorar um pouco para executar!
 
-Eu usei a funcao com o comando abaixo, mais enxuto por causa da minha internet 💩 e funcionou:
+Eu usei a função com o comando abaixo, mais enxuto por causa da minha internet a manivela e funcionou:
 
 ```python
 taxa <- c("Anellida[ORG]","Ctenophora[ORG]")
